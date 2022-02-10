@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Convert Money</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="Contanier">
+        <div class="Div-header">
+            <header>
+                <h1>DevClub Conversor de dinheiro</h1>
+            </header>
+        </div>
+
+        <div class="div-Main">
+            <label> Converter <strong>de</strong>
+
+                <select id="Select-value-First">
+                    <option> R$ Real </option>
+                </select>
+            </label>
+
+            <label> Converter <strong>para</strong>
+                <select id="Select-value-Second">
+                    <option> US$ Dólar Americano </option>
+                    <option> € Euro</option>
+                    <option> Bitcoin </option>
+                    <option> R$ Real </option>
+                </select>
+
+            </label>
+
+            <label> <strong> Valor</strong>
+
+                <input id="Input_value" type="text" placeholder="Ex: 10.000">
+
+            </label>
+
+            <button id="Button-convert">Converter</button>
+
+            <div class="div-Converter">
+
+                <img class="Img-first" src="./assets/brasil 2.svg" alt="Flag-Brazil">
+                <p>Real</p>
+                <p class="Value" id="Value_first">R$ 10.000,00</p>
+                <img class="img-arrow" src="./assets/Vector.png" alt="Arrow">
+
+                <img class="Img-thard" id="Img_Corrency" src="./assets/estados-unidos (1) 1.svg" alt="Flag-Eua">
+                <p id="Paragraph_corrency">Dólar Americano</p>
+                <p class="Value" id="Value_Corrency">US$ 2.000,00</p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

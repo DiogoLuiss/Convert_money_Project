@@ -1,0 +1,100 @@
+const Button = document.getElementById("Button-convert")
+const selector1 = document.getElementById("Select-value-First").value
+const Selector_for = document.getElementById("Select-value-Second")
+
+
+const dolar = 3
+const Euro = 6
+const Bitcoin = 230000
+
+const Convert_value = () => {
+   
+    const Input_Value = document.getElementById('Input_value').value
+    const Value_chosen = document.getElementById('Value_first')
+    const Value_convert = document.getElementById("Value_Corrency")
+
+
+if ( Selector_for.value == "US$ Dólar Americano") {
+    Value_chosen.innerHTML = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRl'
+    }).format(Input_Value)
+
+    Value_convert.innerHTML = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(Input_Value / dolar)
+    
+}else if ( Selector_for.value == "€ Euro") {
+    Value_chosen.innerHTML = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRl'
+    }).format(Input_Value)
+
+    Value_convert.innerHTML = new Intl.NumberFormat('de-DE', {
+        style: 'currency',
+        currency: 'EUR'
+    }).format(Input_Value / Euro)
+    
+}
+else if (Selector_for.value == "Bitcoin") {
+    Value_chosen.innerHTML = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRl'
+    }).format(Input_Value)
+
+    Value_convert.innerHTML = new Intl.NumberFormat('de-DE', {
+        style: 'currency',
+        currency: 'BTC'
+    }).format(Input_Value /Bitcoin )
+    
+}
+else if (Selector_for.value == "R$ Real") {
+    Value_chosen.innerHTML = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRl'
+    }).format(Input_Value)
+
+    Value_convert.innerHTML = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRl'
+    }).format(Input_Value)
+    
+   
+} }
+
+Button.addEventListener('click', Convert_value)
+
+
+const Update_informations = () => {
+
+    const Paragraph_corrency = document.getElementById("Paragraph_corrency")
+    const Img_Thard = document.getElementById ("Img_Corrency")
+    if (Selector_for.value == "€ Euro") {
+
+        Paragraph_corrency.innerHTML = Selector_for.value
+        Img_Thard.src = "./assets/Euro.svg"
+
+
+    }
+    else if (Selector_for.value == "US$ Dólar Americano") {
+
+        Paragraph_corrency.innerHTML = Selector_for.value
+        Img_Thard.src = "./assets/estados-unidos (1) 1.svg"
+
+
+    }
+    else if (Selector_for.value == "Bitcoin") {
+        Paragraph_corrency.innerHTML = Selector_for.value
+        Img_Thard.src = "./assets/Bitcoin.img"
+        
+    }
+
+    else if (Selector_for.value == "R$ Real") {
+        Paragraph_corrency.innerHTML = Selector_for.value
+        Img_Thard.src = "./assets/brasil 2.svg"
+    }
+    Convert_value ()
+}
+
+Selector_for.addEventListener('change', Update_informations)
