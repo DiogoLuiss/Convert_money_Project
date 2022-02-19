@@ -17,6 +17,8 @@ body {
     background-color: #F4F4F4;
     margin: 50px auto;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.89);
+    border: none;
 }
 
 h1 {
@@ -28,7 +30,7 @@ h1 {
 }
 
 .Div-header {
-    background-color: #1B83E2;
+    background-color: #362591;
     width: 375px;
     height: 66px;
     padding: 20px;
@@ -57,6 +59,7 @@ select {
     padding-left: 15px;
     font-size: 15px;
     color: #777777;
+    border-radius: 5px;
 }
 
 strong {
@@ -72,13 +75,14 @@ input {
     margin-bottom: 15px;
     padding-left: 15px;
     font-size: 15px;
+    border-radius: 5px;
 }
 
 button {
 
     width: 327px;
     height: 48px;
-    background-color: #1B83E2;
+    background-color: #362591;
     border-radius: 10px;
     cursor: pointer;
     font-size: 22px;
@@ -86,7 +90,10 @@ button {
     font-weight: 400;
     border-style: solid none;
     margin-top: 10px;
+    border: none;
+    box-shadow: 0px 0px 8px rgb(17, 0, 255);
 }
+
 
 button:hover {
     transition: 0.5s;
@@ -100,7 +107,7 @@ button:active {
 
 .div-Converter {
     margin-top: 20px;
-    border: 3px solid #1B83E2;
+    border: 3px solid  #000000;
     width: 100%;
     height: 300px;
     display: block;
@@ -117,7 +124,7 @@ img {
 }
 
 .Value {
-    color: #1B83E2;
+    color: #281be2;
     font-weight: 700;
     font-size: 20px;
 }
