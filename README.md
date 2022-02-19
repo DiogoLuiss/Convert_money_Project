@@ -1,6 +1,6 @@
 <h1>Convert-Money</h1>
 
-<Img src="./assets/Project.img.png">
+<Img src="./assets/Project_Update.png">
 
 <p>Neste projeto eu usei ,<strong>Html, Css e JavaScript, </strong> coloquei em pratica muito do que aprendi.</p>
 
