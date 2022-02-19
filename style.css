@@ -98,6 +98,8 @@ button {
 button:hover {
     transition: 0.5s;
     opacity: 0.9;
+    color: #000000;
+    font-weight: 600;
 }
 
 button:active {
