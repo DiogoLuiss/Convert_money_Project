@@ -3,16 +3,21 @@ const selector1 = document.getElementById("Select-value-First").value
 const Selector_for = document.getElementById("Select-value-Second")
 
 
-const dolar = 3
-const Euro = 6
-const Bitcoin = 230000
 
-const Convert_value = () => {
+
+
+const  Convert_value = async () => {
    
     const Input_Value = document.getElementById('Input_value').value
     const Value_chosen = document.getElementById('Value_first')
     const Value_convert = document.getElementById("Value_Corrency")
 
+    const API = await fetch ("http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(Response  =>  Response.json())
+
+
+    const dolar = API.USDBRL.ask
+    const Euro = API.EURBRL.ask
+    const Bitcoin = API.BTCBRL.ask
 
 if ( Selector_for.value == "US$ Dólar Americano") {
     Value_chosen.innerHTML = new Intl.NumberFormat('pt-BR', {
