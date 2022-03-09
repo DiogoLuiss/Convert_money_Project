@@ -15,7 +15,7 @@ const  Convert_value = async () => {
     const API = await fetch ("http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(Response  =>  Response.json())
 
 
-    const dolar = API.USDBRL.ask
+    const Dolar = API.USDBRL.ask
     const Euro = API.EURBRL.ask
     const Bitcoin = API.BTCBRL.ask
 
@@ -28,7 +28,7 @@ if ( Selector_for.value == "US$ Dólar Americano") {
     Value_convert.innerHTML = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD'
-    }).format(Input_Value / dolar)
+    }).format(Input_Value / Dolar)
     
 }else if ( Selector_for.value == "€ Euro") {
     Value_chosen.innerHTML = new Intl.NumberFormat('pt-BR', {
