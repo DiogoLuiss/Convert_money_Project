@@ -12,7 +12,7 @@ const  Convert_value = async () => {
     const Value_chosen = document.getElementById('Value_first')
     const Value_convert = document.getElementById("Value_Corrency")
 
-    const API = await fetch ("http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(Response  =>  Response.json())
+    const API = await fetch ("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(Response  =>  Response.json())
 
 
     const Dolar = API.USDBRL.ask
