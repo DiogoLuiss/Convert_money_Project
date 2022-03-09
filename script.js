@@ -51,7 +51,7 @@ else if (Selector_for.value == "Bitcoin") {
     Value_convert.innerHTML = new Intl.NumberFormat('de-DE', {
         style: 'currency',
         currency: 'BTC'
-    }).format(Input_Value /Bitcoin )
+    }).format(Input_Value /Bitcoin/1000 )
     
 }
 else if (Selector_for.value == "R$ Real") {
