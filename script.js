@@ -15,9 +15,11 @@ const  Convert_value = async () => {
     const API = await fetch ("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(Response  =>  Response.json())
 
 
-    const Dolar = API.USDBRL.ask
-    const Euro = API.EURBRL.ask
-    const Bitcoin = API.BTCBRL.ask
+    const Dolar = API.USD.ask
+    const Euro = API.EUR.ask
+    const Bitcoin = API.BTC.ask
+    
+
 
 if ( Selector_for.value == "US$ Dólar Americano") {
     Value_chosen.innerHTML = new Intl.NumberFormat('pt-BR', {
@@ -48,10 +50,12 @@ else if (Selector_for.value == "Bitcoin") {
         currency: 'BRl'
     }).format(Input_Value)
 
+    const Convert_Bitcoin = Input_Value/Bitcoin/1000
+    
     Value_convert.innerHTML = new Intl.NumberFormat('de-DE', {
         style: 'currency',
         currency: 'BTC'
-    }).format(Input_Value /Bitcoin/1000 )
+    }).format(Convert_Bitcoin)
     
 }
 else if (Selector_for.value == "R$ Real") {
