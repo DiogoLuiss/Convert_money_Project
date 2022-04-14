@@ -1,7 +1,7 @@
 
 <h1>Convert_Money</h1>
 
-<img src="./assets/Convert_Money_Img.gif"  width="500px" height="300px" alt="Video-Project">
+<img src="./assets/Project_Update.png"  alt="Video-Project">
 
 <h2>project's goal</h2> 
 
