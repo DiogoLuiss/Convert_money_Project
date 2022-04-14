@@ -1,11 +1,67 @@
-<h1>Convert-Money</h1>
 
-<Img src="./assets/Project_Update.png">
+<h1>Convert_Money</h1>
 
-<p>Neste projeto eu usei ,<strong>Html, Css e JavaScript, </strong> coloquei em pratica muito do que aprendi.</p>
+<img src="./assets/Convert_Money.gif"  width="500px" height="300px" alt="Video-Project">
 
-<p>O projeto tem como objetivo converte real em 4 moedas sendo elas o Euro, Dólar, Bitcoin e o proprio Real <strong>Os valores usados são verdadeiros</strong></p>
+<h2>project's goal</h2> 
 
-<p>In this project I use,<strong>Html, Css and JavaScript,</strong> put much of what I learned into practice.</p>
+The project aims to convert the real into four currencies: Euro, Dollar, Bitcoin and Real.
 
-<p>The project aims to convert reais into 4 currencies, namely the Euro, Dollar, Bitcoin and the Real itself <strong>The values used are true</strong></p>
+<a href="https://www.youtube.com/watch?v=qFLhGq0060w" target="_blank"  ><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+<h2>How it was developed</h2>
+
+An api has been integrated so that the values are updated.
+
+<a href="https://www.youtube.com/watch?v=qFLhGq0060w" target="_blank"  ><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+<h2>🤝 Collaborator </h2> 
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+      <img src="./assets//Perfil.jpg"  width="100px;" alt="Foto do Diogo Luis no GitHub">
+      <br>
+        <sub>
+          <b>Diogo Luis</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<a href="https://www.youtube.com/watch?v=qFLhGq0060w" target="_blank"  ><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+<h2> 👨‍💻 Technologies </h2>
+
+Technologies used in this project:
+
+<br>
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src=https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

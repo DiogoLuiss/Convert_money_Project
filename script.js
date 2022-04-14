@@ -7,18 +7,18 @@ const Selector_for = document.getElementById("Select-value-Second")
 
 
 const  Convert_value = async () => {
-   
+  
     const Input_Value = document.getElementById('Input_value').value
     const Value_chosen = document.getElementById('Value_first')
     const Value_convert = document.getElementById("Value_Corrency")
 
     const API = await fetch ("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(Response  =>  Response.json())
+  console.log(API.BTCBRL.ask);
 
-
-    const Dolar = API.USD.ask
-    const Euro = API.EUR.ask
-    const Bitcoin = API.BTC.ask
-    
+    const Dolar = API.USDBRL.ask
+    const Euro = API.EURBRL.ask
+    const Bitcoin = API.BTCBRL.ask
+  
 
 
 if ( Selector_for.value == "US$ Dólar Americano") {
